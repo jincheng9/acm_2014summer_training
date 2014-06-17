@@ -69,7 +69,8 @@ int main()
 		}
 		//sort array mod1, later used for binary search
 		sort(mod1, mod1+m, cmp);
-		//binary search mod1, need to delete repeated mod[j].value
+		//There may exist same value with different index, let the big index be the small index
+		//otherwise, binary search may find the bigger index
 		for(long long i=0; i<m-1; i++) {
 			if(mod1[i+1].value==mod1[i].value) {
 				mod1[i+1].index = mod1[i].index;
