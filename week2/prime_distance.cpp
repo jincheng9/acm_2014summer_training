@@ -16,6 +16,7 @@ int main()
 	unsigned int L, U;
 	int num = 0;
 	//calculate the prime number between 2 and sqrt(2147483647)+1
+	//here 0 is prime, 1 is non-prime
 	int obj = (int)sqrt((double)2147483647)+1;
 	for(int i=2; i<=obj; i++) {
 		if(prime2[i]==0) {
