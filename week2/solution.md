@@ -1,4 +1,4 @@
-1. POj 1365 - Prime Land
+1 POj 1365 - Prime Land
 
 对一个数进行素数分解，思路是从最小的素数2开始逐个进行素数分解
 
@@ -8,17 +8,17 @@ tip: 我之前用memset对int数组进行初始化犯了一个错误，那就是
 
 如果要把size=1000的int数组a全部初始化为0，应该是memset(a, 0, 4000)，而不是memset(a, 0, 1000)。
 
-2. POJ 1006 - Biorhythms
+2 POJ 1006 - Biorhythms
 
 p+23x = e + 28y = i+33z，因为23, 28, 33两两互素，可以用中国剩余定理求解。
 
 这道题由于数据规模比较小，暴力枚举也可以AC.
 
-3. POJ 2689 - Prime Distance
+3 POJ 2689 - Prime Distance
 
 快速筛素数，可以先求出2到sqrt(2147483647)之间的所有素数，然后用这些素数去筛选L和U之间的素数，再对筛到的素数扫描一遍即可。
 
-4. POJ 2417 - Discrete Logging
+4 POJ 2417 - Discrete Logging
 
 离散对数，可以用baby step giant step算法求解。
 
